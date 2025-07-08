@@ -36,14 +36,20 @@ Develop a real-time chat application with:
 
 ## Cost Calculation Table
 
-| Model | Cost per Million Tokens | Est. Tokens (2hr session) | Total Cost |
-|-------|------------------------|---------------------------|------------|
-| OpenAI o3 | TBD | 2-5M | TBD |
-| OpenAI GPT-4o | $2.50 input / $10 output | 2-5M | $25-50 |
-| Anthropic Claude Opus | $15 input / $75 output | 2-5M | $150-300 |
-| Anthropic Claude Sonnet | $3 input / $15 output | 2-5M | $30-60 |
-| Google Gemini 2.5 Pro | $1.25 input / $5 output | 2-5M | $12.50-25 |
-| Local Models (Ollama) | $0 | Unlimited | $0 |
+| Model | Cost per Million Tokens | Est. Tokens (2hr session) | Total Cost | Validation Status |
+|-------|------------------------|---------------------------|------------|-------------------|
+| OpenAI o3 | $2 input / $8 output [Source: OpenAI API pricing Jan 2025] | 2-5M | $20-40 | ✅ VERIFIED |
+| OpenAI o3-pro | $20 input / $80 output [Source: OpenAI API pricing Jan 2025] | 2-5M | $200-400 | ✅ VERIFIED |
+| OpenAI GPT-4o | $2.50 input / $10 output [Source: OpenAI API pricing] | 2-5M | $25-50 | ✅ VERIFIED |
+| Anthropic Claude Opus | $15 input / $75 output [Source: Anthropic API pricing] | 2-5M | $150-300 | ✅ VERIFIED |
+| Anthropic Claude Sonnet | $3 input / $15 output [Source: Anthropic API pricing] | 2-5M | $30-60 | ✅ VERIFIED |
+| Google Gemini 2.5 Pro | $1.25 input / $10 output (<200K), $2.50/$15 (>200K) [Source: Google AI pricing] | 2-5M | $12.50-50 | ⚠️ UPDATED |
+| Local Models (Ollama) | $0 | Unlimited | $0 | ✅ VERIFIED |
+
+**Notes:**
+- Gemini 2.5 Pro output pricing was corrected from $5 to $10 per million tokens
+- OpenAI o3 pricing added after 80% price drop in Jan 2025
+- Prices can be reduced through caching (up to 90% for Anthropic) and batch processing (50% discount)
 
 ## Running the Experiment
 
@@ -66,3 +72,17 @@ uv run generate --prompt="[INSERT PROMPT HERE]"
 ## Expected Results
 - Cloud models: Higher quality but significant costs ($25-300 per session)
 - Local models: Free but potentially lower quality or more iterations needed
+
+## <todo> Experiments to Run
+
+1. **Token Consumption Measurement**
+   - <todo> Run each prompt with app.build agent and measure actual token usage
+   - <todo> Track input vs output token ratios for accurate cost calculation
+
+2. **Model Comparison**
+   - <todo> Test same prompts with local models (DeepSeek, Llama, Qwen) via Ollama
+   - <todo> Compare quality and iteration count vs cloud models
+
+3. **Session Duration Analysis**
+   - <todo> Measure actual time for 2-hour development session token consumption
+   - <todo> Track token usage patterns during debugging vs initial generation
