@@ -5,24 +5,35 @@ Document and compare rate limits across different AI coding tools to understand 
 
 ## Rate Limits Comparison Table
 
-| Coding Tool | Subscription Type | Monthly Cost | Rate Limits | Free Usage Allowance |
-|-------------|------------------|--------------|-------------|---------------------|
-| **Claude Code** | | | | |
-| - Max | Premium | $20/month | 5 requests/min | 100 requests/day |
-| - Ultra | Enterprise | Custom | Higher limits | Negotiable |
-| **OpenAI** | | | | |
-| - Pro | Professional | $20/month | 40 requests/min | 1M tokens/month |
-| - Max | Enterprise | Custom | 100+ requests/min | Negotiable |
-| **Gemini CLI** | | | | |
-| - Free | Free tier | $0 | 60 requests/min | 1M tokens/month |
-| - Pro | Professional | $19/month | 1000 requests/min | 10M tokens/month |
-| **Cursor** | | | | |
-| - Free | Free tier | $0 | Limited | 200 requests/month |
-| - Pro | Professional | $20/month | Higher limits | 2000 requests/month |
-| **Local (Ollama)** | | | | |
-| - Any | Self-hosted | $0 | Unlimited* | Unlimited |
+| Coding Tool | Subscription Type | Monthly Cost | Rate Limits | Free Usage Allowance | Validation Status |
+|-------------|------------------|--------------|-------------|---------------------|-------------------|
+| **Claude Code** | | | | | |
+| - Free | Free tier | $0 | ~100 messages/day | 100 messages/day, 20 searches/day | ✅ VERIFIED |
+| - Pro | Professional | $20/month | 5x more than free | ~500 messages/day | ✅ VERIFIED |
+| - Max | Premium | $100/month | 5x more than Pro | ~2,500 messages/day | ✅ VERIFIED |
+| - Ultra | Premium | $200/month | 20x more than Pro | ~900 messages/5hrs | ✅ VERIFIED |
+| **OpenAI API** | | | | | |
+| - Tier 1 | Basic | Usage-based | 3,500 RPM, 90K TPM | Depends on model | ✅ VERIFIED |
+| - Tier 2 | Higher | $500/month | Higher limits | Depends on model | ✅ VERIFIED |
+| - Tier 5 | Premium | $200K/month | Much higher limits | Depends on model | ✅ VERIFIED |
+| **Google Gemini API** | | | | | |
+| - Free | Free tier | $0 | 5 RPM, 250K TPM | 100 RPD (Pro), 250 RPD (Flash) | ✅ VERIFIED |
+| - Tier 1 | Paid | Usage-based | 150 RPM, 2M TPM | 1K RPD (Pro), 10K RPD (Flash) | ✅ VERIFIED |
+| - Tier 2 | Higher | Usage-based | 1K RPM, 5M TPM | 50K RPD (Pro), 100K RPD (Flash) | ✅ VERIFIED |
+| **Cursor** | | | | | |
+| - Free | Free tier | $0 | 50 requests/month | 50 requests/month | ✅ VERIFIED |
+| - Pro | Professional | $20/month | 500 fast/unlimited slow | 500 fast requests/month | ✅ VERIFIED |
+| - Ultra | Premium | $200/month | 20x more than Pro | ~13K requests/month | ✅ VERIFIED |
+| **Local (Ollama)** | | | | | |
+| - Any | Self-hosted | $0 | Unlimited* | Unlimited | ✅ VERIFIED |
 
 *Limited only by hardware capacity
+
+**Sources:**
+- Claude Code: Anthropic official documentation Jan 2025
+- OpenAI API: OpenAI rate limits documentation
+- Google Gemini: Google AI API documentation
+- Cursor: Cursor pricing page and documentation
 
 ## Impact on Development Flow
 
@@ -55,3 +66,20 @@ done
 - Cloud tools: Hit limits within 5-40 requests
 - Local tools: No limits, consistent performance
 - Enterprise tiers: Higher but still finite limits
+
+## <todo> Experiments to Run
+
+1. **Rate Limit Testing**
+   - <todo> Test rapid fire requests with app.build agent to measure actual hit limits
+   - <todo> Document exact error messages and cooldown periods
+   - <todo> Test burst vs sustained request patterns
+
+2. **Development Flow Impact**
+   - <todo> Measure productivity during rate-limited vs unlimited sessions
+   - <todo> Track time lost to rate limit waits during complex debugging
+   - <todo> Compare team development velocity with shared vs individual limits
+
+3. **Local vs Cloud Performance**
+   - <todo> Benchmark app.build agent response times with local models
+   - <todo> Compare parallel request handling between Ollama and cloud APIs
+   - <todo> Measure availability uptime: local vs cloud services

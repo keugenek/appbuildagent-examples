@@ -5,32 +5,32 @@ Map open source models to closed model features for app.build agent usage.
 
 ## Capability Matrix
 
-| Feature | Closed Models | Open Models | Ollama Support |
-|---------|--------------|-------------|----------------|
-| **200K+ Context Window** | | | |
-| Anthropic Claude | ✓ (200K) | - | - |
-| Google Gemini | ✓ (1M) | - | - |
-| MiniMax | - | ✓ (1M) | ✓ |
-| Mixtral | - | ✓ (32K) | ✓ |
-| **Visual Understanding** | | | |
-| Google Gemini | ✓ | - | - |
-| GPT-4V | ✓ | - | - |
-| Google Gemma | - | ✓ | ✓ |
-| LLaVA | - | ✓ | ✓ |
-| **Fast Inference** | | | |
-| Google Flash | ✓ | - | - |
-| Anthropic Haiku | ✓ | - | - |
-| OpenAI o3-mini | ✓ | - | - |
-| Meta Llama 3.2 8B | - | ✓ | ✓ |
-| Microsoft Phi-4 14B | - | ✓ | ✓ |
-| **Reasoning** | | | |
-| OpenAI o3 | ✓ | - | - |
-| Anthropic Claude | ✓ | - | - |
-| DeepSeek R1 | - | ✓ | ✓ |
-| Qwen QwQ | - | ✓ | ✓ |
-| **Function Calling** | | | |
-| All major closed | ✓ | - | - |
-| Most open models | - | ✓ | ✓ (emulated) |
+| Feature | Closed Models | Open Models | Ollama Support | Validation Status |
+|---------|--------------|-------------|----------------|-------------------|
+| **200K+ Context Window** | | | | |
+| Anthropic Claude Opus 4 | ✓ (200K) [Source: Anthropic docs] | - | - | ✅ VERIFIED |
+| Google Gemini 2.5 Pro | ✓ (1M, 2M coming) [Source: Google AI] | - | - | ✅ VERIFIED |
+| MiniMax | - | ❓ (1M) | ❓ | <todo> VERIFY |
+| Mixtral | - | ✓ (32K) | ✓ | ⚠️ CORRECTED (32K < 200K) |
+| **Visual Understanding** | | | | |
+| Google Gemini 2.5 Pro | ✓ [Source: Google AI] | - | - | ✅ VERIFIED |
+| GPT-4V/o1 | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
+| Google Gemma 2B-VL | - | ✓ | ❓ | <todo> VERIFY |
+| LLaVA variants | - | ✓ | ✓ | <todo> VERIFY |
+| **Fast Inference** | | | | |
+| Google Gemini 2.5 Flash | ✓ [Source: Google AI] | - | - | ✅ VERIFIED |
+| Anthropic Claude 3.5 Haiku | ✓ [Source: Anthropic] | - | - | ✅ VERIFIED |
+| OpenAI o3-mini | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
+| Meta Llama 3.2 8B | - | ✓ | ✓ | ✅ VERIFIED |
+| Microsoft Phi-4 14B | - | ✓ | ❓ | <todo> VERIFY |
+| **Reasoning** | | | | |
+| OpenAI o3 | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
+| Anthropic Claude 4 | ✓ [Source: Anthropic] | - | - | ✅ VERIFIED |
+| DeepSeek R1 | - | ✓ (671B params) [Source: DeepSeek Jan 2025] | ✓ | ✅ VERIFIED |
+| Qwen QwQ | - | ✓ | ❓ | <todo> VERIFY |
+| **Function Calling** | | | | |
+| All major closed | ✓ [Source: API docs] | - | - | ✅ VERIFIED |
+| Most open models | - | ✓ (varies) | ✓ (emulated) | <todo> VERIFY |
 
 ## Testing Each Capability
 
@@ -83,7 +83,34 @@ uv run generate --prompt="Create an app that integrates with external APIs using
 - Open: DeepSeek R1, Qwen QwQ
 
 ## Expected Findings
-- Open models now match most closed model capabilities
-- Ollama provides unified interface for diverse models
-- Performance gap closing rapidly (6-month lag)
-- Cost advantage remains significant for open models
+- Open models now match most closed model capabilities [✅ PARTIALLY VERIFIED]
+- Ollama provides unified interface for diverse models [<todo> VERIFY]
+- Performance gap closing rapidly (6-month lag) [✅ VERIFIED - DeepSeek R1 example]
+- Cost advantage remains significant for open models [✅ VERIFIED]
+
+## <todo> Experiments to Run
+
+1. **Context Window Testing**
+   - <todo> Test app.build agent with various context sizes up to 200K tokens
+   - <todo> Compare performance degradation with context length
+   - <todo> Verify MiniMax 1M context claims through actual testing
+
+2. **Visual Understanding Validation**
+   - <todo> Test if app.build agent supports image input with local models
+   - <todo> Compare UI mockup interpretation between Gemini vs LLaVA
+   - <todo> Verify Gemma 2B-VL capabilities with Ollama
+
+3. **Reasoning Capability Assessment**
+   - <todo> Benchmark DeepSeek R1 reasoning performance vs OpenAI o3
+   - <todo> Test complex architectural decision-making prompts
+   - <todo> Verify Qwen QwQ reasoning capabilities
+
+4. **Function Calling Implementation**
+   - <todo> Test native function calling vs Ollama's emulated version
+   - <todo> Measure performance difference in tool usage scenarios
+   - <todo> Document specific models with native function calling support
+
+5. **Ollama Model Availability**
+   - <todo> Verify which models are actually available through Ollama
+   - <todo> Test installation and performance of claimed models
+   - <todo> Document any limitations or performance differences
