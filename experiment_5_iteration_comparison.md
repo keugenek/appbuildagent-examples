@@ -21,13 +21,13 @@ Standard reference app: **Task Management System**
 | Model | Type | Release Date | SWE-bench Score | Iterations to Complete | Notes | Validation Status |
 |-------|------|--------------|-----------------|----------------------|-------|-------------------|
 | **Claude Opus 4** | Closed | May 22, 2025 | 72.5% [[Anthropic Claude 4](https://www.anthropic.com/news/claude-4)] | <todo> MEASURE | Best coding model available | ✅ VERIFIED |
+| **Claude Sonnet 4** | Closed | May 22, 2025 | ~65% [Estimated] | Fast | Balanced performance/cost | ✅ [[Claude 4](https://www.anthropic.com/news/claude-4)] |
 | **OpenAI o3** | Closed | Apr 16, 2025 | 71.7% [[OpenAI o3](https://openai.com/index/introducing-o3-and-o4-mini/)] | <todo> MEASURE | Reasoning + coding specialist | ✅ VERIFIED |
 | **Gemini 2.5 Pro** | Closed | Jun 25, 2025 | 63.8% [[Google Gemini 2.5](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/)] | <todo> MEASURE | 1M context, WebDev #1 | ✅ VERIFIED |
 
 ### Fast Coding Models (Speed Optimized)
 | Model | Type | Release Date | SWE-bench Score | Speed | Notes | Validation Status |
 |-------|------|--------------|-----------------|-------|-------|-------------------|
-| **Claude Sonnet 4** | Closed | May 22, 2025 | ~65% [Estimated] | Fast | Balanced performance/cost | ✅ [[Claude 4](https://www.anthropic.com/news/claude-4)] |
 | **OpenAI o3-mini** | Closed | Jan 31, 2025 | 68.1% [[OpenAI o3-mini](https://openai.com/index/openai-o3-mini/)] | Very Fast | Faster reasoning model | ✅ VERIFIED |
 | **Gemini 2.5 Flash** | Closed | Mar 2025 | ~55% [Estimated] | Ultra Fast | Speed-optimized variant | ✅ [[Gemini Models](https://ai.google.dev/gemini-api/docs/models)] |
 | **Claude 3.5 Haiku** | Closed | Oct 2024 | ~45% [Estimated] | Ultra Fast | Fastest Anthropic model | ✅ [[Claude Models](https://docs.anthropic.com/en/docs/about-claude/models)] |
