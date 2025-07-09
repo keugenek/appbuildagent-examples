@@ -14,7 +14,7 @@ Compare app.build agent performance on different hardware with varying paralleli
 
 ### System 2: Threadripper PRO Workstation [✅ VERIFIED]
 - CPU: AMD Ryzen Threadripper PRO 3945WX (12C/24T, Zen 2, 3.9GHz base, 4.3GHz boost) [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
-- Memory: 512GB (8-channel DDR4-3200) [corrected from 4-channel] [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
+- Memory: 512GB (8-channel DDR4-2900) [corrected from 4-channel] [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
 - GPU: Dual RTX 3090 (24GB VRAM each) with GPU inferencing [[NVIDIA RTX 3090](https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090-3090ti/)]
 - PCIe Lanes: 128 PCIe 4.0 lanes [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
 - Expected tokens/s: 120-200 [✅ UPDATED - Dual RTX 3090s provide excellent LLM inference performance]
