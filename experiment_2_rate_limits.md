@@ -8,21 +8,13 @@ Document and compare rate limits across different AI coding tools to understand 
 | Coding Tool | Subscription Type | Monthly Cost | Rate Limits | Free Usage Allowance | Validation Status |
 |-------------|------------------|--------------|-------------|---------------------|-------------------|
 | **Claude Code** | | | | | |
-| - Free | Free tier | $0 | ~100 messages/day | 100 messages/day, 20 searches/day | ✅ [[Claude Support](https://support.anthropic.com/en/articles/9518518-how-do-i-use-claude-ai)] |
+| - Free | Free tier | $0 | ~100 messages/day | 100 messages/day, 20 searches/day | ✅ [[Blog Post]([https://apidog.com/blog/claude-api-rate-limits/)] |
 | - Pro | Professional | $20/month | 5x more than free | ~500 messages/day | ✅ [[Claude Pricing](https://www.anthropic.com/pricing)] |
 | - Max | Premium | $100/month | 5x more than Pro | ~2,500 messages/day | ✅ [[Claude Pricing](https://www.anthropic.com/pricing)] |
 | - Ultra | Premium | $200/month | 20x more than Pro | ~900 messages/5hrs | ✅ [[Claude Pricing](https://www.anthropic.com/pricing)] |
-| **OpenAI API** | | | | | |
-| - Tier 1 | Basic | Usage-based | 3,500 RPM, 90K TPM | Depends on model | ✅ [[OpenAI Rate Limits](https://platform.openai.com/docs/guides/rate-limits)] |
-| - Tier 2 | Higher | $500/month | Higher limits | Depends on model | ✅ [[OpenAI Rate Limits](https://platform.openai.com/docs/guides/rate-limits)] |
-| - Tier 5 | Premium | $200K/month | Much higher limits | Depends on model | ✅ [[OpenAI Rate Limits](https://platform.openai.com/docs/guides/rate-limits)] |
-| **Google Gemini API** | | | | | |
-| - Free | Free tier | $0 | 5 RPM, 250K TPM | 100 RPD (Pro), 250 RPD (Flash) | ✅ [[Gemini API Docs](https://ai.google.dev/gemini-api/docs/models)] |
-| - Tier 1 | Paid | Usage-based | 150 RPM, 2M TPM | 1K RPD (Pro), 10K RPD (Flash) | ✅ [[Gemini API Docs](https://ai.google.dev/gemini-api/docs/models)] |
-| - Tier 2 | Higher | Usage-based | 1K RPM, 5M TPM | 50K RPD (Pro), 100K RPD (Flash) | ✅ [[Gemini API Docs](https://ai.google.dev/gemini-api/docs/models)] |
 | **Cursor** | | | | | |
 | - Free | Free tier | $0 | 50 requests/month | 50 requests/month | ✅ [[Cursor Pricing](https://cursor.sh/pricing)] |
-| - Pro | Professional | $20/month | 500 fast/unlimited slow | 500 fast requests/month | ✅ [[Cursor Pricing](https://cursor.sh/pricing)] |
+| - Pro | Professional | $20/month | ~225-650 requests/month | ✅ [[Cursor Pricing](https://cursor.sh/pricing)] |
 | - Ultra | Premium | $200/month | 20x more than Pro | ~13K requests/month | ✅ [[Cursor Pricing](https://cursor.sh/pricing)] |
 | **Local (Ollama)** | | | | | |
 | - Any | Self-hosted | $0 | Unlimited* | Unlimited | ✅ [[Ollama GitHub](https://github.com/ollama/ollama)] |
