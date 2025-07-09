@@ -10,12 +10,11 @@ Map open source models to closed model features for app.build agent usage.
 | **200K+ Context Window** | | | | |
 | Anthropic Claude Opus 4 | ✓ (200K) [[Claude 4 Docs](https://docs.anthropic.com/en/docs/about-claude/models)] | - | - | ✅ VERIFIED |
 | Google Gemini 2.5 Pro | ✓ (1M, 2M coming) [[Gemini Docs](https://ai.google.dev/gemini-api/docs/long-context)] | - | - | ✅ VERIFIED |
-| MiniMax | - | ❓ (1M) | ❓ | <todo> VERIFY |
-| Mixtral | - | ✓ (32K) [[Mixtral GitHub](https://github.com/mistralai/mistral-src)] | ✓ | ⚠️ CORRECTED (32K < 200K) |
+| MiniMax | - |  (4M) | [HuggingFace](https://huggingface.co/blog/MiniMax-AI/minimax01) | <todo> VERIFY |
 | **Visual Understanding** | | | | |
 | Google Gemini 2.5 Pro | ✓ [[Gemini Vision](https://ai.google.dev/gemini-api/docs/vision)] | - | - | ✅ VERIFIED |
-| GPT-4V/o1 | ✓ [[OpenAI Vision](https://platform.openai.com/docs/guides/vision)] | - | - | ✅ VERIFIED |
-| Google Gemma 2B-VL | - | ✓ [[Gemma GitHub](https://github.com/google-deepmind/gemma)] | ❓ | <todo> VERIFY |
+| GPT-4V/o3 | ✓ [[OpenAI Vision](https://platform.openai.com/docs/guides/vision)] | - | - | ✅ VERIFIED |
+| Google Gemma | - | ✓ [[Gemma GitHub](https://github.com/google-deepmind/gemma)] | ❓ | <todo> VERIFY |
 | LLaVA variants | - | ✓ [[LLaVA GitHub](https://github.com/haotian-liu/LLaVA)] | ✓ | <todo> VERIFY |
 | **Fast Inference** | | | | |
 | Google Gemini 2.5 Flash | ✓ [[Gemini Models](https://ai.google.dev/gemini-api/docs/models)] | - | - | ✅ VERIFIED |
