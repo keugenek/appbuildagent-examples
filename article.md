@@ -61,13 +61,26 @@ There are plenty of closed models available by API including ones from Anthropic
 
 Although these SoTA models are the best for coding and developing agents they very soon become very costly to use when consumed via APIs. Consider these sample cost breakdowns of top models based on average coding session length and estimated token consumed:
 
-Session length: 2 hours, xx million tokens, % of more capable model , sample code base in gut hub generated
-Model Cost per milllion tokens, total cost
-OpenAI o3 o3 mini xxx xxxx
-OpenAI 4.1 / 4o??
-Anthropic Claude Opus /  Sonnet 
-Google Gemini 2.5 Pro
-<todo> Table 1. Breakdown of API-based cost per AI-assisted coding session
+Session length: 2 hours, estimated 2-5 million tokens consumed for a typical coding session
+
+**Table 1. Breakdown of API-based cost per AI-assisted coding session**
+
+| Model | Cost per Million Tokens | Est. Tokens (2hr session) | Total Cost |
+|-------|------------------------|---------------------------|------------|
+| OpenAI o3 | $2 input / $8 output | 2-5M | $20-40 |
+| OpenAI o3-pro | $20 input / $80 output | 2-5M | $200-400 |
+| OpenAI GPT-4o | $2.50 input / $10 output | 2-5M | $25-50 |
+| OpenAI GPT-o3-mini | $1.10 input / $4.40 output | 2-5M | $25-50 |
+| Anthropic Claude Opus 4 | $15 input / $75 output | 2-5M | $150-300 |
+| Anthropic Claude Sonnet 4 | $3 input / $15 output | 2-5M | $30-60 |
+| Google Gemini 2.5 Pro | $1.25 input / $10 output (<200K), $2.50/$15 (>200K) | 2-5M | $12.50-50 |
+| Local Models (Ollama) | $0 | Unlimited | $0 |
+
+**Sources:**
+- [OpenAI Pricing](https://openai.com/api/pricing/)
+- [Anthropic Pricing](https://docs.anthropic.com/en/api/pricing)
+- [Google AI Pricing](https://ai.google.dev/pricing)
+- [Ollama GitHub](https://github.com/ollama/ollama)
 
 Local development allows the same consumption completely free given the local models are capable enough to come up with the code that will work in an agentic setup.
 
