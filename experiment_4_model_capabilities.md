@@ -8,29 +8,29 @@ Map open source models to closed model features for app.build agent usage.
 | Feature | Closed Models | Open Models | Ollama Support | Validation Status |
 |---------|--------------|-------------|----------------|-------------------|
 | **200K+ Context Window** | | | | |
-| Anthropic Claude Opus 4 | ✓ (200K) [Source: Anthropic docs] | - | - | ✅ VERIFIED |
-| Google Gemini 2.5 Pro | ✓ (1M, 2M coming) [Source: Google AI] | - | - | ✅ VERIFIED |
+| Anthropic Claude Opus 4 | ✓ (200K) [[Claude 4 Docs](https://docs.anthropic.com/en/docs/about-claude/models)] | - | - | ✅ VERIFIED |
+| Google Gemini 2.5 Pro | ✓ (1M, 2M coming) [[Gemini Docs](https://ai.google.dev/gemini-api/docs/long-context)] | - | - | ✅ VERIFIED |
 | MiniMax | - | ❓ (1M) | ❓ | <todo> VERIFY |
-| Mixtral | - | ✓ (32K) | ✓ | ⚠️ CORRECTED (32K < 200K) |
+| Mixtral | - | ✓ (32K) [[Mixtral GitHub](https://github.com/mistralai/mistral-src)] | ✓ | ⚠️ CORRECTED (32K < 200K) |
 | **Visual Understanding** | | | | |
-| Google Gemini 2.5 Pro | ✓ [Source: Google AI] | - | - | ✅ VERIFIED |
-| GPT-4V/o1 | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
-| Google Gemma 2B-VL | - | ✓ | ❓ | <todo> VERIFY |
-| LLaVA variants | - | ✓ | ✓ | <todo> VERIFY |
+| Google Gemini 2.5 Pro | ✓ [[Gemini Vision](https://ai.google.dev/gemini-api/docs/vision)] | - | - | ✅ VERIFIED |
+| GPT-4V/o1 | ✓ [[OpenAI Vision](https://platform.openai.com/docs/guides/vision)] | - | - | ✅ VERIFIED |
+| Google Gemma 2B-VL | - | ✓ [[Gemma GitHub](https://github.com/google-deepmind/gemma)] | ❓ | <todo> VERIFY |
+| LLaVA variants | - | ✓ [[LLaVA GitHub](https://github.com/haotian-liu/LLaVA)] | ✓ | <todo> VERIFY |
 | **Fast Inference** | | | | |
-| Google Gemini 2.5 Flash | ✓ [Source: Google AI] | - | - | ✅ VERIFIED |
-| Anthropic Claude 3.5 Haiku | ✓ [Source: Anthropic] | - | - | ✅ VERIFIED |
-| OpenAI o3-mini | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
-| Meta Llama 3.2 8B | - | ✓ | ✓ | ✅ VERIFIED |
-| Microsoft Phi-4 14B | - | ✓ | ❓ | <todo> VERIFY |
+| Google Gemini 2.5 Flash | ✓ [[Gemini Models](https://ai.google.dev/gemini-api/docs/models)] | - | - | ✅ VERIFIED |
+| Anthropic Claude 3.5 Haiku | ✓ [[Claude Models](https://docs.anthropic.com/en/docs/about-claude/models)] | - | - | ✅ VERIFIED |
+| OpenAI o3-mini | ✓ [[OpenAI Models](https://platform.openai.com/docs/models)] | - | - | ✅ VERIFIED |
+| Meta Llama 3.2 8B | - | ✓ [[Llama GitHub](https://github.com/meta-llama/llama-models)] | ✓ | ✅ VERIFIED |
+| Microsoft Phi-4 14B | - | ✓ [[Phi GitHub](https://github.com/microsoft/Phi-3)] | ❓ | <todo> VERIFY |
 | **Reasoning** | | | | |
-| OpenAI o3 | ✓ [Source: OpenAI] | - | - | ✅ VERIFIED |
-| Anthropic Claude 4 | ✓ [Source: Anthropic] | - | - | ✅ VERIFIED |
-| DeepSeek R1 | - | ✓ (671B params) [Source: DeepSeek Jan 2025] | ✓ | ✅ VERIFIED |
-| Qwen QwQ | - | ✓ | ❓ | <todo> VERIFY |
+| OpenAI o3 | ✓ [[OpenAI o3](https://openai.com/index/introducing-o3-and-o4-mini/)] | - | - | ✅ VERIFIED |
+| Anthropic Claude 4 | ✓ [[Claude 4](https://www.anthropic.com/news/claude-4)] | - | - | ✅ VERIFIED |
+| DeepSeek R1 | - | ✓ (671B params) [[DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1)] | ✓ | ✅ VERIFIED |
+| Qwen QwQ | - | ✓ [[Qwen GitHub](https://github.com/QwenLM/Qwen)] | ❓ | <todo> VERIFY |
 | **Function Calling** | | | | |
-| All major closed | ✓ [Source: API docs] | - | - | ✅ VERIFIED |
-| Most open models | - | ✓ (varies) | ✓ (emulated) | <todo> VERIFY |
+| All major closed | ✓ [[OpenAI Tools](https://platform.openai.com/docs/guides/function-calling), [Claude Tools](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)] | - | - | ✅ VERIFIED |
+| Most open models | - | ✓ (varies) [[Ollama Tools](https://ollama.com/blog/tool-support)] | ✓ (emulated) | <todo> VERIFY |
 
 ## Testing Each Capability
 

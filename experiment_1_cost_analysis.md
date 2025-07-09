@@ -38,13 +38,13 @@ Develop a real-time chat application with:
 
 | Model | Cost per Million Tokens | Est. Tokens (2hr session) | Total Cost | Validation Status |
 |-------|------------------------|---------------------------|------------|-------------------|
-| OpenAI o3 | $2 input / $8 output [Source: OpenAI API pricing Jan 2025] | 2-5M | $20-40 | ✅ VERIFIED |
-| OpenAI o3-pro | $20 input / $80 output [Source: OpenAI API pricing Jan 2025] | 2-5M | $200-400 | ✅ VERIFIED |
-| OpenAI GPT-4o | $2.50 input / $10 output [Source: OpenAI API pricing] | 2-5M | $25-50 | ✅ VERIFIED |
-| Anthropic Claude Opus | $15 input / $75 output [Source: Anthropic API pricing] | 2-5M | $150-300 | ✅ VERIFIED |
-| Anthropic Claude Sonnet | $3 input / $15 output [Source: Anthropic API pricing] | 2-5M | $30-60 | ✅ VERIFIED |
-| Google Gemini 2.5 Pro | $1.25 input / $10 output (<200K), $2.50/$15 (>200K) [Source: Google AI pricing] | 2-5M | $12.50-50 | ⚠️ UPDATED |
-| Local Models (Ollama) | $0 | Unlimited | $0 | ✅ VERIFIED |
+| OpenAI o3 | $2 input / $8 output [[OpenAI Pricing](https://openai.com/api/pricing/)] | 2-5M | $20-40 | ✅ VERIFIED |
+| OpenAI o3-pro | $20 input / $80 output [[OpenAI Pricing](https://openai.com/api/pricing/)] | 2-5M | $200-400 | ✅ VERIFIED |
+| OpenAI GPT-4o | $2.50 input / $10 output [[OpenAI Pricing](https://openai.com/api/pricing/)] | 2-5M | $25-50 | ✅ VERIFIED |
+| Anthropic Claude Opus 4 | $15 input / $75 output [[Anthropic Pricing](https://docs.anthropic.com/en/api/pricing)] | 2-5M | $150-300 | ✅ VERIFIED |
+| Anthropic Claude Sonnet 4 | $3 input / $15 output [[Anthropic Pricing](https://docs.anthropic.com/en/api/pricing)] | 2-5M | $30-60 | ✅ VERIFIED |
+| Google Gemini 2.5 Pro | $1.25 input / $10 output (<200K), $2.50/$15 (>200K) [[Google AI Pricing](https://ai.google.dev/pricing)] | 2-5M | $12.50-50 | ⚠️ UPDATED |
+| Local Models (Ollama) | $0 [[Ollama GitHub](https://github.com/ollama/ollama)] | Unlimited | $0 | ✅ VERIFIED |
 
 **Notes:**
 - Gemini 2.5 Pro output pricing was corrected from $5 to $10 per million tokens

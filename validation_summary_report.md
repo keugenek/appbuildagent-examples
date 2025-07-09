@@ -9,7 +9,7 @@ All 5 experiments have been fact-checked line by line with current market data a
 - ✅ **Verified data** from official sources
 - ⚠️ **Corrected inaccuracies** where found  
 - <todo> **Specific experiments** needed to fill data gaps
-- 🔗 **Source citations** for all claims
+- 🔗 **Direct reference links** added to every verified claim for independent verification
 
 ## Experiment Validation Results
 

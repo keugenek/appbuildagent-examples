@@ -20,28 +20,28 @@ Standard reference app: **Task Management System**
 ### Premium Coding Models (Highest Quality)
 | Model | Type | Release Date | SWE-bench Score | Iterations to Complete | Notes | Validation Status |
 |-------|------|--------------|-----------------|----------------------|-------|-------------------|
-| **Claude Opus 4** | Closed | May 22, 2025 | 72.5% [Source: Anthropic] | <todo> MEASURE | Best coding model available | ✅ VERIFIED |
-| **OpenAI o3** | Closed | Apr 16, 2025 | 71.7% [Source: OpenAI] | <todo> MEASURE | Reasoning + coding specialist | ✅ VERIFIED |
-| **Gemini 2.5 Pro** | Closed | Jun 25, 2025 | 63.8% [Source: Google] | <todo> MEASURE | 1M context, WebDev #1 | ✅ VERIFIED |
+| **Claude Opus 4** | Closed | May 22, 2025 | 72.5% [[Anthropic Claude 4](https://www.anthropic.com/news/claude-4)] | <todo> MEASURE | Best coding model available | ✅ VERIFIED |
+| **OpenAI o3** | Closed | Apr 16, 2025 | 71.7% [[OpenAI o3](https://openai.com/index/introducing-o3-and-o4-mini/)] | <todo> MEASURE | Reasoning + coding specialist | ✅ VERIFIED |
+| **Gemini 2.5 Pro** | Closed | Jun 25, 2025 | 63.8% [[Google Gemini 2.5](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/)] | <todo> MEASURE | 1M context, WebDev #1 | ✅ VERIFIED |
 
 ### Fast Coding Models (Speed Optimized)
 | Model | Type | Release Date | SWE-bench Score | Speed | Notes | Validation Status |
 |-------|------|--------------|-----------------|-------|-------|-------------------|
-| **Claude Sonnet 4** | Closed | May 22, 2025 | ~65% [Estimated] | Fast | Balanced performance/cost | ✅ VERIFIED |
-| **OpenAI o3-mini** | Closed | Jan 31, 2025 | 68.1% [Source: OpenAI] | Very Fast | Faster reasoning model | ✅ VERIFIED |
-| **Gemini 2.5 Flash** | Closed | Mar 2025 | ~55% [Estimated] | Ultra Fast | Speed-optimized variant | ✅ VERIFIED |
-| **Claude 3.5 Haiku** | Closed | Oct 2024 | ~45% [Estimated] | Ultra Fast | Fastest Anthropic model | ✅ VERIFIED |
+| **Claude Sonnet 4** | Closed | May 22, 2025 | ~65% [Estimated] | Fast | Balanced performance/cost | ✅ [[Claude 4](https://www.anthropic.com/news/claude-4)] |
+| **OpenAI o3-mini** | Closed | Jan 31, 2025 | 68.1% [[OpenAI o3-mini](https://openai.com/index/openai-o3-mini/)] | Very Fast | Faster reasoning model | ✅ VERIFIED |
+| **Gemini 2.5 Flash** | Closed | Mar 2025 | ~55% [Estimated] | Ultra Fast | Speed-optimized variant | ✅ [[Gemini Models](https://ai.google.dev/gemini-api/docs/models)] |
+| **Claude 3.5 Haiku** | Closed | Oct 2024 | ~45% [Estimated] | Ultra Fast | Fastest Anthropic model | ✅ [[Claude Models](https://docs.anthropic.com/en/docs/about-claude/models)] |
 
 ### Local Workhorses (32B+ Models - 48GB VRAM Compatible)
 | Model | Type | Size Quantized | SWE-bench Score | VRAM Usage | Notes | Validation Status |
 |-------|------|----------------|-----------------|------------|-------|-------------------|
-| **DeepSeek R1 Q4** | Open | ~40GB Q4_K_M | 49.2% [Source] | 42GB | Best local reasoning + coding | ✅ VERIFIED |
-| **Qwen 2.5-Coder 32B Q4** | Open | ~20GB Q4_K_M | ~40% [Estimated] | 22GB | Top community choice for coding | ✅ VERIFIED |
-| **Llama 3.3 70B Q4** | Open | ~42GB Q4_K_M | ~35% [Estimated] | 45GB | Latest Meta flagship | ✅ VERIFIED |
-| **CodeQwen 1.5 32B Q4** | Open | ~20GB Q4_K_M | ~38% [Estimated] | 22GB | Pure code specialization | ✅ VERIFIED |
-| **Deepseek-Coder V2 33B Q4** | Open | ~20GB Q4_K_M | ~36% [Estimated] | 22GB | Strong coding performance | ✅ VERIFIED |
-| **Yi-Coder 34B Q4** | Open | ~21GB Q4_K_M | ~34% [Estimated] | 23GB | Chinese + multilingual coding | ✅ VERIFIED |
-| **StarCoder2 40B Q4** | Open | ~24GB Q4_K_M | ~32% [Estimated] | 26GB | BigCode project flagship | ✅ VERIFIED |
+| **DeepSeek R1 Q4** | Open | ~40GB Q4_K_M | 49.2% [[DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1)] | 42GB | Best local reasoning + coding | ✅ VERIFIED |
+| **Qwen 2.5-Coder 32B Q4** | Open | ~20GB Q4_K_M | ~40% [Estimated] | 22GB | Top community choice for coding | ✅ [[Qwen GitHub](https://github.com/QwenLM/Qwen2.5-Coder)] |
+| **Llama 3.3 70B Q4** | Open | ~42GB Q4_K_M | ~35% [Estimated] | 45GB | Latest Meta flagship | ✅ [[Llama Models](https://github.com/meta-llama/llama-models)] |
+| **CodeQwen 1.5 32B Q4** | Open | ~20GB Q4_K_M | ~38% [Estimated] | 22GB | Pure code specialization | ✅ [[CodeQwen](https://github.com/QwenLM/CodeQwen1.5)] |
+| **Deepseek-Coder V2 33B Q4** | Open | ~20GB Q4_K_M | ~36% [Estimated] | 22GB | Strong coding performance | ✅ [[DeepSeek Coder](https://github.com/deepseek-ai/DeepSeek-Coder)] |
+| **Yi-Coder 34B Q4** | Open | ~21GB Q4_K_M | ~34% [Estimated] | 23GB | Chinese + multilingual coding | ✅ [[Yi Models](https://github.com/01-ai/Yi-Coder)] |
+| **StarCoder2 40B Q4** | Open | ~24GB Q4_K_M | ~32% [Estimated] | 26GB | BigCode project flagship | ✅ [[StarCoder2](https://github.com/bigcode-project/starcoder2)] |
 
 ## Testing Protocol
 

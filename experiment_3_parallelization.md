@@ -6,17 +6,17 @@ Compare app.build agent performance on different hardware with varying paralleli
 ## Test Systems
 
 ### System 1: MacBook Pro M4 [✅ VERIFIED]
-- CPU: Apple M4 Pro/Max (64-core GPU, 12-16 CPU cores)
-- Memory: 48GB unified memory [Source: Apple M4 specs]
-- GPU: Integrated (up to 40-core GPU on M4 Max)
-- Memory Bandwidth: Up to 546 GB/s
+- CPU: Apple M4 Pro/Max (64-core GPU, 12-16 CPU cores) [[Apple M4 Specs](https://www.apple.com/mac/compare/)]
+- Memory: 48GB unified memory [[Apple M4 Specs](https://www.apple.com/mac/compare/)]
+- GPU: Integrated (up to 40-core GPU on M4 Max) [[Apple M4 Specs](https://www.apple.com/mac/compare/)]
+- Memory Bandwidth: Up to 546 GB/s [[Apple M4 Tech Specs](https://www.apple.com/macbook-pro/specs/)]
 - Expected tokens/s: 30-50 [✅ REALISTIC - Conservative for 70B models]
 
 ### System 2: Threadripper PRO Workstation [✅ VERIFIED]
-- CPU: AMD Ryzen Threadripper PRO 3945WX (12C/24T, Zen 2, 3.9GHz base, 4.3GHz boost) [Source: AMD specs]
-- Memory: 512GB (8-channel DDR4-3200) [corrected from 4-channel]
-- GPU: Dual RTX 3090 (24GB VRAM each) with GPU inferencing [Source: NVIDIA specs]
-- PCIe Lanes: 128 PCIe 4.0 lanes
+- CPU: AMD Ryzen Threadripper PRO 3945WX (12C/24T, Zen 2, 3.9GHz base, 4.3GHz boost) [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
+- Memory: 512GB (8-channel DDR4-3200) [corrected from 4-channel] [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
+- GPU: Dual RTX 3090 (24GB VRAM each) with GPU inferencing [[NVIDIA RTX 3090](https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090-3090ti/)]
+- PCIe Lanes: 128 PCIe 4.0 lanes [[AMD Specs](https://www.amd.com/en/products/processors/threadripper/threadripper-pro.html)]
 - Expected tokens/s: 120-200 [✅ UPDATED - Dual RTX 3090s provide excellent LLM inference performance]
 
 ## Parallelization Test Matrix
